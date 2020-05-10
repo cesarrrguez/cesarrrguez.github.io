@@ -1,0 +1,21 @@
+{
+  "name": "cesarrrguez.github.io",
+  "version": "0.1.0",
+  "description": "My personal website",
+  "main": "assets/js/main.js",
+  "keywords": [
+    "César Rodríguez",
+    "ingeniero de software",
+    "desarrollador de software",
+    "programador",
+    "software engineer",
+    "software developer",
+    "programmer"
+  ],
+  "author": "César Rodríguez <cesar.rrguez@gmail.com> (https://cesarrrguez.github.io)",
+  "homepage": "https://github.com/cesarrrguez/cesarrrguez.github.io#readme",
+  "bugs": {
+    "url": "https://github.com/cesarrrguez/cesarrrguez.github.io/issues",
+    "email": "cesar.rrguez@gmail.com"
+  }
+}
