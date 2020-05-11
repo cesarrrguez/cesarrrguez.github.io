@@ -1,4 +1,6 @@
-$(document).ready(function () {
+(function ($) {
+  'use strict';
+
   // Preloader
   $(window).on('load', function () {
     $('#preloader')
@@ -7,4 +9,4 @@ $(document).ready(function () {
         $(this).remove();
       });
   });
-});
+})(window.jQuery);

@@ -7,8 +7,7 @@
   "plugins": ["prettier"],
   "globals": {
     "Atomics": "readonly",
-    "SharedArrayBuffer": "readonly",
-    "$": true
+    "SharedArrayBuffer": "readonly"
   },
   "parserOptions": {
     "ecmaVersion": 2018
@@ -17,6 +16,7 @@
     "prettier/prettier": "error",
     "no-undef": "warn",
     "func-names": "off",
-    "no-console": "off"
+    "no-console": "off",
+    "strict": "off"
   }
 }
