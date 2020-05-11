@@ -2,7 +2,7 @@
   "name": "cesarrrguez.github.io",
   "version": "0.1.0",
   "description": "My personal website",
-  "main": "assets/js/main.js",
+  "main": "index.html",
   "scripts": {
     "lint": "eslint assets/js",
     "lint:fix": "eslint assets/js --fix"
