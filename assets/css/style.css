@@ -1,4 +1,40 @@
 /*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #454545;
+}
+
+a {
+  color: #1acc8d;
+}
+
+a:hover {
+  color: #2be4a2;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+::selection {
+  background-color: #cfe9d4;
+  color: #262f34;
+  text-shadow: none !important;
+}
+
+::-moz-selection {
+  background-color: #cfe9d4;
+  color: #262f34;
+  text-shadow: none !important;
+}
+
+/*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
 #preloader {
