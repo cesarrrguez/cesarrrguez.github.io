@@ -151,7 +151,7 @@ section {
 #hero {
   width: 100%;
   position: relative;
-  padding: 120px 0 20px 0;
+  padding: 100px 0 20px 0;
   background: url('../img/backgrounds/hero.jpg');
   background-size: cover;
   background-position: 50%;
@@ -189,7 +189,7 @@ section {
 #hero .hero-img img {
   border-radius: 50%;
   overflow: hidden;
-  max-width: 150px;
+  max-width: 200px;
 }
 
 @media (min-width: 1024px) {
