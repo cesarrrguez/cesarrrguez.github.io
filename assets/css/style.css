@@ -84,11 +84,11 @@ h4 {
 # Social links
 --------------------------------------------------------------*/
 .social-links a {
-  font-size: 18px;
+  font-size: 25px;
   display: inline-block !important;
   color: #fff;
   line-height: 1;
-  padding: 8px 0;
+  padding: 6px 0;
   margin-right: 4px;
   border-radius: 50%;
   text-align: center;
@@ -183,7 +183,7 @@ section {
 #hero h2 {
   color: #cfcfce;
   font-size: 18px;
-  margin: -5px 0 30px 0;
+  margin: -5px 0 20px 0;
 }
 
 #hero .hero-img img {
