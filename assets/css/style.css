@@ -145,6 +145,39 @@ section {
   overflow: hidden;
 }
 
+.section-title {
+  padding-bottom: 40px;
+}
+
+.section-title h2 {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0 0 5px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  font-family: 'Poppins', sans-serif;
+}
+
+.section-title h2::after {
+  content: '';
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background-color: #1acc8d;
+  margin: 4px 10px;
+}
+
+.section-title p {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+}
+
 /*--------------------------------------------------------------
 # Hero
 --------------------------------------------------------------*/
@@ -221,4 +254,74 @@ section {
   #hero .hero-img img {
     width: 80%;
   }
+}
+
+/*--------------------------------------------------------------
+# Technical skills
+--------------------------------------------------------------*/
+#technical-skills {
+  padding: 40px 0 20px 0;
+}
+
+#technical-skills .content + .content {
+  margin-top: 50px;
+}
+
+@media (max-width: 991px) {
+  #technical-skills .content + .content {
+    margin-top: 10px;
+  }
+}
+
+#technical-skills .icon-boxes h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+#technical-skills .icon-box {
+  margin-top: 40px;
+}
+
+#technical-skills .icon-box:first-child {
+  margin-top: 0;
+}
+
+#technical-skills .icon-box .icon {
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border: 2px solid #1acc8d;
+  border-radius: 50px;
+  transition: 0.5s;
+}
+
+#technical-skills .icon-box .icon i {
+  color: #1acc8d;
+  font-size: 32px;
+}
+
+#technical-skills .icon-box:hover .icon {
+  background-color: #1acc8d;
+  border-color: #1acc8d;
+}
+
+#technical-skills .icon-box:hover .icon i {
+  color: #fff;
+}
+
+#technical-skills .icon-box .title {
+  margin-left: 85px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+#technical-skills .icon-box .description {
+  margin-left: 85px;
+  line-height: 24px;
+  font-size: 14px;
 }
