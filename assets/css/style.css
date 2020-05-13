@@ -267,12 +267,6 @@ section {
   margin-top: 50px;
 }
 
-@media (max-width: 991px) {
-  #technical-skills .content + .content {
-    margin-top: 10px;
-  }
-}
-
 #technical-skills .icon-boxes h3 {
   font-size: 28px;
   font-weight: 700;
@@ -324,4 +318,18 @@ section {
   margin-left: 85px;
   line-height: 24px;
   font-size: 14px;
+}
+
+@media (max-width: 767px) {
+  #technical-skills .content + .content {
+    margin-top: 10px;
+  }
+
+  #technical-skills .container > .section-title + .row .icon-boxes {
+    margin-top: 30px;
+  }
+
+  #technical-skills .container > .section-title + .row + .row .icon-boxes {
+    margin-top: 20px;
+  }
 }
