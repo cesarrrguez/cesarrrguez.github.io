@@ -50,4 +50,28 @@
     );
     return false;
   });
+
+  // Mobile Navigation
+  $('.mobile-nav').html($('.nav-menu').html());
+
+  function toggleMenu() {
+    $('body').toggleClass('mobile-nav-active');
+    $('.mobile-nav-toggle').toggleClass('open');
+    $('#header').toggleClass('header-mobile-nav');
+    $('#header .container').toggleClass('mobile');
+  }
+
+  $(document).on('click', '.mobile-nav-toggle', function () {
+    toggleMenu();
+  });
+
+  $(document).click(function (e) {
+    const $container = $('.mobile-nav, .mobile-nav-toggle');
+    if (!$container.is(e.target) && $container.has(e.target).length === 0) {
+      if ($('body').hasClass('mobile-nav-active')) {
+        toggleMenu();
+      }
+    }
+  });
+
 })(window.jQuery);
