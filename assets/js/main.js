@@ -74,4 +74,41 @@
     }
   });
 
+  // Smooth scroll for the navigation menu
+  $(document).on('click', '.nav-menu a, .mobile-nav a', function (e) {
+    if (
+      window.location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') &&
+      window.location.hostname === this.hostname
+    ) {
+      e.preventDefault();
+
+      let scrollTo = $(this.hash).offset().top;
+      const scrolled = 20;
+
+      scrollTo -= $('#header').outerHeight();
+
+      if (!$('#header').hasClass('header-scrolled')) {
+        scrollTo += scrolled;
+      }
+
+      if ($(this).attr('href') === '#header') {
+        scrollTo = 0;
+      }
+
+      $('html, body').animate(
+        {
+          scrollTop: scrollTo,
+        },
+        1500,
+        'easeInOutExpo'
+      );
+
+      $('.nav-menu .active, .mobile-nav .active').removeClass('active');
+      $(this).closest('li').addClass('active');
+
+      if ($('body').hasClass('mobile-nav-active')) {
+        toggleMenu();
+      }
+    }
+  });
 })(window.jQuery);
