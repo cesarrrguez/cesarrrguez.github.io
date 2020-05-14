@@ -1,11 +1,18 @@
 # César Rodríguez website
 
-[![RELEASE](https://img.shields.io/badge/version-v0.3.0-blue)](https://github.com/cesarrrguez/cesarrrguez.github.io/releases/tag/v0.3.0)
+[![RELEASE](https://img.shields.io/badge/version-v0.4.0-blue)](https://github.com/cesarrrguez/cesarrrguez.github.io/releases/tag/v0.4.0)
 [![LICENSE](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 This repository contains my personal website. It is hosted on **Github Pages** :rocket:.
 
 ## Changelog
+
+### [v0.4.0](https://github.com/cesarrrguez/cesarrrguez.github.io/releases/tag/v0.4.0)
+
+- Add menu
+- Add footer
+- Add back to top button
+- Add box shadow to personal skills icon boxes
 
 ### [v0.3.0](https://github.com/cesarrrguez/cesarrrguez.github.io/releases/tag/v0.3.0)
 
