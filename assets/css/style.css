@@ -369,3 +369,24 @@ section {
   margin: 0;
   padding: 0;
 }
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  background-color: #222222;
+  padding: 0 0 30px 0;
+  color: #fff;
+  font-size: 14px;
+}
+
+#footer .footer-top {
+  padding: 10px 0 10px 0;
+  text-align: center;
+}
+
+#footer .copyright {
+  border-top: 1px solid #383f55;
+  text-align: center;
+  padding-top: 20px;
+}
