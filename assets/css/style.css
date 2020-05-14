@@ -377,6 +377,7 @@ section {
   border: 1px solid #eaecf3;
   border-radius: 0.75rem;
   transition: ease-in-out 0.3s;
+  box-shadow: 0 10px 20px 0 rgba(197, 197, 197, 0.5);
 }
 
 #personal-skills .icon-box:hover {
