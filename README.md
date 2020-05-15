@@ -1,11 +1,17 @@
 # César Rodríguez website
 
-[![RELEASE](https://img.shields.io/badge/version-v0.4.0-blue)](https://github.com/cesarrrguez/cesarrrguez.github.io/releases/tag/v0.4.0)
+[![RELEASE](https://img.shields.io/badge/version-v0.5.0-blue)](https://github.com/cesarrrguez/cesarrrguez.github.io/releases/tag/v0.5.0)
 [![LICENSE](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 This repository contains my personal website. It is hosted on **Github Pages** :rocket:.
 
 ## Changelog
+
+### [v0.5.0](https://github.com/cesarrrguez/cesarrrguez.github.io/releases/tag/v0.5.0)
+
+- Add recommendations
+- Add call to action
+- Adjust size of header logo
 
 ### [v0.4.0](https://github.com/cesarrrguez/cesarrrguez.github.io/releases/tag/v0.4.0)
 
