@@ -607,6 +607,108 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Recommendations
+--------------------------------------------------------------*/
+#recommendations {
+  padding: 80px 0;
+  position: relative;
+  background: url('../img/backgrounds/recommendations.jpg') no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+#recommendations::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(11, 8, 8, 0.7);
+}
+
+#recommendations .recommendation-item {
+  text-align: center;
+  color: #fff;
+}
+
+#recommendations .recommendation-item .recommendation-img {
+  width: 100px;
+  border-radius: 50%;
+  border: 6px solid rgba(255, 255, 255, 0.15);
+  margin: 0 auto;
+}
+
+#recommendations .recommendation-item h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+  color: #fff;
+}
+
+#recommendations .recommendation-item h4 {
+  font-size: 14px;
+  color: #ddd;
+  margin: 0 0 15px 0;
+}
+
+#recommendations .recommendation-item .quote-icon-left,
+#recommendations .recommendation-item .quote-icon-right {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 26px;
+}
+
+#recommendations .recommendation-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+#recommendations .recommendation-item .quote-icon-right {
+  display: inline-block;
+  top: 10px;
+  right: -5px;
+  position: relative;
+}
+
+#recommendations .recommendation-item p {
+  font-style: italic;
+  margin: 0 auto 15px auto;
+  color: #eee;
+}
+
+#recommendations .owl-nav,
+#recommendations .owl-dots {
+  margin-top: 5px;
+  text-align: center;
+}
+
+#recommendations .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+#recommendations .owl-dot.active {
+  background-color: #1acc8d !important;
+}
+
+@media (min-width: 1024px) {
+  #recommendations {
+    background-attachment: fixed;
+  }
+}
+
+@media (min-width: 992px) {
+  #recommendations .recommendation-item p {
+    width: 80%;
+  }
+}
+
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 #footer {
