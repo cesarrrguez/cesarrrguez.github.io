@@ -738,6 +738,170 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+#contact .info i {
+  font-size: 20px;
+  color: #1acc8d;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background-color: #eff5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+#contact .info h4 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  padding: 0 0 0 60px;
+}
+
+#contact .info p {
+  font-size: 14px;
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
+}
+
+#contact .info .email,
+#contact .info .phone {
+  margin-top: 40px;
+}
+
+#contact .info .email:hover i,
+#contact .info .address:hover i,
+#contact .info .phone:hover i {
+  background-color: #1acc8d;
+  color: #fff;
+}
+
+#contact .contact-form .form-group {
+  padding-bottom: 8px;
+}
+
+#contact .contact-form .validate {
+  display: none;
+  color: #f00;
+  margin: 5px 0 0 5px;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+#contact .contact-form .validate i {
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+#contact .contact-form .validate .message {
+  vertical-align: top;
+}
+
+#contact .contact-form .error-message {
+  display: none;
+  color: #fff;
+  background-color: #f00;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  border-radius: 0.5rem;
+}
+
+#contact .contact-form .error-captcha {
+  display: none;
+  color: #f00;
+}
+
+#contact .contact-form .sent-message {
+  display: none;
+  color: #fff;
+  background-color: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  border-radius: 0.5rem;
+}
+
+#contact .contact-form .loading {
+  display: none;
+  text-align: center;
+  padding: 15px;
+}
+
+#contact .contact-form .loading:before {
+  content: '';
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+  border-radius: 0.5rem;
+  box-shadow: none;
+  font-size: 14px;
+  padding: 2rem;
+}
+
+#contact .contact-form input.error,
+#contact .contact-form textarea.error {
+  border-color: #f00;
+}
+
+#contact .contact-form input {
+  height: 44px;
+}
+
+#contact .contact-form textarea {
+  padding: 2rem;
+}
+
+#contact .contact-form input:focus,
+#contact .contact-form textarea:focus {
+  border-color: #2dc997;
+}
+
+#contact .contact-form button[type='submit'] {
+  background-color: #1acc8d;
+  border: 0;
+  padding: 10px 30px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+#contact .contact-form button[type='submit']:hover {
+  background-color: #34e5a6;
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 #footer {

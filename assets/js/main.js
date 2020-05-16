@@ -119,4 +119,103 @@
     loop: true,
     items: 1,
   });
+
+  // Contact form
+  $('.contact-form').submit(function () {
+    const $formGroup = $(this).find('.form-group');
+    let errors = false;
+    const emailExp = /^[^\s()<>@,;:/]+@\w[\w.-]+\.[a-z]{2,}$/i;
+
+    $formGroup.children('input, textarea').each(function () {
+      const $i = $(this);
+      let rule = $i.attr('data-rule');
+
+      if (rule !== undefined) {
+        let ruleError = false;
+        const rulePosition = rule.indexOf(':', 0);
+
+        if (rulePosition >= 0) {
+          rule = rule.substr(0, rulePosition);
+        } else {
+          rule = rule.substr(rulePosition + 1, rule.length);
+        }
+
+        if (
+          (rule === 'required' && $i.val() === '') ||
+          (rule === 'email' && !emailExp.test($i.val()))
+        ) {
+          ruleError = true;
+          errors = true;
+        }
+
+        if (ruleError) {
+          $i.addClass('error');
+          $i.next('.validate').show('blind');
+        } else {
+          $i.removeClass('error');
+          $i.next('.validate').hide('blind');
+        }
+      }
+    });
+
+    // Hide messages
+    $(this).find('.sent-message').slideUp();
+    $(this).find('.error-message').slideUp();
+    $(this).find('.error-captcha').slideUp();
+
+    // Check errors
+    if (errors) {
+      $(this)
+        .find('.error-message')
+        .slideDown()
+        .html('Uno o más campos tienen un error. Por favor revisa e inténtalo de nuevo.');
+      return false;
+    }
+
+    // Check Captcha
+    if (grecaptcha.getResponse() === '') {
+      $(this).find('.error-captcha').slideDown();
+      return false;
+    }
+
+    // Show loading
+    $(this).find('.loading').slideDown();
+
+    const contactFields = {
+      name: $(this).find('#name').val(),
+      email: $(this).find('#email').val(),
+      subject: $(this).find('#subject').val(),
+      message: $(this).find('#message').val(),
+    };
+
+    const emailBody =
+      `<p><strong>Nombre:</strong> ${contactFields.name}<br>` +
+      `<strong>Email:</strong> ${contactFields.email}<br>` +
+      `<strong>Asunto:</strong> ${contactFields.subject}<br>` +
+      `<strong>Mensaje:</strong> ${contactFields.message}</p>`;
+
+    Email.send({
+      SecureToken: 'd77754ed-529f-4108-bac2-19ddd2a5765a',
+      To: 'cesar.rrguez@gmail.com',
+      From: contactFields.email,
+      Subject: 'Nuevo contacto desde la página web',
+      Body: emailBody,
+    }).then((message) => {
+      if (message === 'OK') {
+        $(this).find('.loading').slideUp();
+        $(this).find('.sent-message').slideDown();
+        $(this).find('input:not(input[type=submit]), textarea').val('');
+      } else {
+        $(this).find('.loading').slideUp();
+        $(this)
+          .find('.error-message')
+          .slideDown()
+          .html(
+            'Hubo un error intentando enviar tu mensaje. Por favor inténtalo de nuevo más tarde.'
+          );
+      }
+    });
+
+    return false;
+  });
 })(window.jQuery);
