@@ -154,7 +154,8 @@ h4 {
   background: #222222;
 }
 
-#header .logo h1 {
+#header .logo a {
+  font-family: 'Montserrat', sans-serif;
   font-size: 21px;
   margin: 0;
   padding: 0 0 0 5px;
