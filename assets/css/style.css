@@ -564,17 +564,38 @@ section {
 # Call to action
 --------------------------------------------------------------*/
 #call-to-action {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../img/backgrounds/action.jpg) fixed center center;
+  background-color: #222222;
   background-size: cover;
-  padding: 80px 0;
+  padding: 40px 0;
 }
 
 #call-to-action h3 {
   color: #fff;
   font-size: 28px;
   font-weight: 700;
-  text-align: center;
+}
+
+#call-to-action p {
+  color: #fff;
+}
+
+#call-to-action .btn-container a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 26px;
+  border-radius: 3px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 3px solid #fff;
+  color: #fff;
+}
+
+#call-to-action .btn-container a:hover {
+  background-color: #1acc8d;
+  border: 3px solid #1acc8d;
 }
 
 @media (max-width: 1199px) {
@@ -583,9 +604,11 @@ section {
   }
 }
 
-@media (max-width: 1024px) {
-  #call-to-action {
-    background-attachment: scroll;
+@media (min-width: 991px) {
+  #call-to-action .btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
   }
 }
 

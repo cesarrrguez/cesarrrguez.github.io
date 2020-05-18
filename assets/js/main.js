@@ -79,6 +79,18 @@
     return false;
   });
 
+  // Go to contact button
+  $('.go-to-contact').click(function () {
+    $('html, body').animate(
+      {
+        scrollTop: $(this.hash).offset().top,
+      },
+      1500,
+      'easeInOutExpo'
+    );
+    return false;
+  });
+
   // Mobile Navigation
   $('.mobile-nav').html($('.nav-menu').html());
 
