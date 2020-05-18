@@ -171,9 +171,18 @@ h6 {
   height: 2rem;
 }
 
+@media (max-width: 1199px) {
+  #header .logo a {
+    font-size: 18px;
+  }
+}
+
 @media (max-width: 990px) {
   #header {
     height: 64px;
+  }
+  #header .logo a {
+    font-size: 21px;
   }
 }
 
