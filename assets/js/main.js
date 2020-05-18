@@ -31,6 +31,34 @@
     $('#header').addClass('header-scrolled');
   }
 
+  // Navigation active state on scroll
+  $(window).on('scroll', function () {
+    const scrollPosition = $(this).scrollTop() + 80;
+
+    if (scrollPosition < 300) {
+      $('.nav-menu, .mobile-nav').find('li').removeClass('active');
+      $('.nav-menu, .mobile-nav').find('li:first').addClass('active');
+    } else if (scrollPosition === $(document).height() - $(window).height() + 80) {
+      $('.nav-menu, .mobile-nav').find('li').removeClass('active');
+      $('.nav-menu, .mobile-nav').find('li:last').addClass('active');
+    } else {
+      $('section').each(function () {
+        const topPosition = $(this).offset().top;
+        const bottomPosition = topPosition + $(this).outerHeight();
+
+        if (scrollPosition >= topPosition && scrollPosition <= bottomPosition) {
+          if (scrollPosition <= bottomPosition) {
+            $('.nav-menu, .mobile-nav').find('li').removeClass('active');
+          }
+          $('.nav-menu, .mobile-nav')
+            .find(`a[href="#${$(this).attr('id')}"]`)
+            .parent('li')
+            .addClass('active');
+        }
+      });
+    }
+  });
+
   // Back to top button
   $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
