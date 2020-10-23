@@ -7,6 +7,16 @@ This repository contains my personal website. It is hosted on **Github Pages** :
 
 ## Changelog
 
+### [v1.1.0](https://github.com/cesarrrguez/cesarrrguez.github.io/releases/tag/v1.1.0)
+
+- Improvements on microdata schema
+- Improve profile photo quality
+- Change social icons order
+- Change img text avatar logo to css mode
+- Add CSS Custom Properties (Variables) for colors
+- Update personal skills
+- Update technical skills
+
 ### [v1.0.0](https://github.com/cesarrrguez/cesarrrguez.github.io/releases/tag/v1.0.0)
 
 - Add navigation active state on scroll
